@@ -26,8 +26,11 @@ Maven: 3+
 
 Chrome: 76
 
-To run test on browserstack run
 
+Ask me to give you PropertiesConfiguration.java file
+paste it to src/main/java/config/PropertiesConfiguration.java
+
+To run test on browserstack run
 
 mvn clean test -Dtest=tests.student.MakePayment -Dplatform=browserstack 
 
