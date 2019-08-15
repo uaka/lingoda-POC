@@ -6,7 +6,7 @@ I made audit of wdio tests for Lingoda and found next limitations:
 - no screenshots
 - no stacktrace!
 - hard to read the code
-- no Windows support
+- not compatible with Windows OS
 
 I was absolutely blinded and disappointed trying to debug them
 
