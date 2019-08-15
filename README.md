@@ -34,3 +34,6 @@ mvn clean test -Dtest=tests.student.MakePayment -Dplatform=browserstack
 or To run test on browserstack run
 
 mvn clean test -Dtest=tests.student.MakePayment -Dplatform=local
+
+
+mvn clean test -Dsuite=student

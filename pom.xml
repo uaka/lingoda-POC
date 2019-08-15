@@ -12,6 +12,7 @@
         <testng.version>6.14.3</testng.version>
         <maven-compiler.version>3.8.1</maven-compiler.version>
         <aeonbits.version>1.0.10</aeonbits.version>
+        <suite></suite>
     </properties>
 
     <dependencies>
@@ -45,11 +46,18 @@
             <artifactId>log4j-core</artifactId>
             <version>2.12.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+            <scope>compile</scope>
+        </dependency>
+
 
     </dependencies>
     <build>
         <plugins>
-           <plugin>
+            <plugin>
                 <!--https://winterbe.com/posts/2018/08/29/migrate-maven-projects-to-java-11-jigsaw/-->
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
@@ -62,8 +70,19 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M3</version>
-            </plugin>
 
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/suites/${suite}.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <systemProperties>
+                        <property>
+                            <name>allure.results.directory</name>
+                            <value>${project.build.directory}/allure-results</value>
+                        </property>
+                    </systemProperties>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

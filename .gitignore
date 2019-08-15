@@ -1,0 +1,16 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+node_modules
+errorShots
+.build/
+.target/
+src/main/java/config/PropertiesConfiguration.java
+PropertiesConfiguration.java
+
+# IDEs and editors
+.idea
+
+# env file
+.env
+
+
+

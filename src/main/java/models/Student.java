@@ -18,7 +18,7 @@ public class Student {
     private String city;
 
     public Student() {
-        this.firstName = RandomDataHelper.getFirstName();
+        this.firstName = "Student_" + RandomDataHelper.getFirstName();
         this.lastName = RandomDataHelper.getLastName();
         this.email = RandomDataHelper.getEmail(firstName);
         this.phone = RandomDataHelper.getRandomMobile();

@@ -10,6 +10,31 @@ public interface PropertiesConfiguration extends Config {
     @DefaultValue("local") //browserstack
     String platform();
 
+    // ====================== browserstack ====================
+    @DefaultValue("lingoda")
+    String browserstackUser();
+
+    @DefaultValue("sV9JMwMDgdouvwPzzzDY")
+    String browserstackKey();
+
+    @DefaultValue("Chrome")
+    String browser();
+
+    @DefaultValue("62.0")
+    String browser_version();
+
+    @DefaultValue("Windows")
+    String os();
+
+    @DefaultValue("10")
+    String os_version();
+
+    @DefaultValue("true")
+    String browserstackDebug();
+
+    // ====================== browserstack ====================
+
+
 /*
 
     export DB_NAME="linguando"
@@ -50,4 +75,5 @@ public interface PropertiesConfiguration extends Config {
 
     @DefaultValue("error")
     String logLevel();
+
 }
