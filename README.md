@@ -26,6 +26,11 @@ Maven: 3+
 
 Chrome: 76
 
-To run test cd to project dir and run
+To run test on browserstack run
 
-mvn clean test -Dtest=tests.student.MakePayment 
+
+mvn clean test -Dtest=tests.student.MakePayment -Dplatform=browserstack 
+
+or To run test on browserstack run
+
+mvn clean test -Dtest=tests.student.MakePayment -Dplatform=local

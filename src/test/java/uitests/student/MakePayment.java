@@ -1,10 +1,12 @@
 package test.tests.student;
 
 import models.Student;
+
 import org.testng.annotations.Test;
 import pages.student.CoursesPage;
 import pages.student.PaymentPage;
-import test.tests.BaseTest;
+
+import uitests.BaseTest;
 import workflows.WorkFlow;
 
 import static com.codeborne.selenide.Selenide.open;

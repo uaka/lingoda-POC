@@ -7,6 +7,8 @@ import org.aeonbits.owner.Config;
  */
 public interface PropertiesConfiguration extends Config {
 
+    @DefaultValue("local") //browserstack
+    String platform();
 
 /*
 
@@ -16,7 +18,7 @@ public interface PropertiesConfiguration extends Config {
     export TARGET_ENV="staging"
 *
 * */
-    @DefaultValue("266f4bb2cb57")
+    @DefaultValue("253d6281bde6")
     String id();
 
     @DefaultValue("https://%s.www.sv3.lingoda.org")
@@ -33,8 +35,6 @@ public interface PropertiesConfiguration extends Config {
 
     @DefaultValue("staging-v3-db-1a-%s.elb.eu-west-1.amazonaws.com")
     CustomType dbHost(String id);
-
-
 
     @DefaultValue("12345677")
     String password();
