@@ -1,5 +1,5 @@
-I made audit of wdio tests and found next limitations:
-- autotests were not maintained for several months and 90% of tests fails
+I made audit of wdio tests for Lingoda and found next limitations:
+- autotests were not maintained for several months and 90% of tests fail
 - no debug mode
 - no logs 
 - no reports
