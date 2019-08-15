@@ -1,0 +1,80 @@
+{
+  "VISA": {
+    "cardNumber": "4166 6766 6766 6746",
+    "cardHolderName": "TEST VISA",
+    "expiryMonth": "10",
+    "expiryYear": "2020",
+    "CVC": "737"
+  },
+  "MASTERCARD": {
+    "cardNumber": "2223 5204 4356 0010",
+    "cardHolderName": "TEST Mastercard",
+    "expiryMonth": "03",
+    "expiryYear": "2030",
+    "CVC": "737"
+  },
+  "Stripe": {
+    "cardNumberStripe0": "4",
+    "cardNumberStripe1": "000",
+    "cardNumberStripe2": "0062",
+    "cardNumberStripe3": "0000",
+    "cardNumberStripe4": "0007",
+    "expireDateStripe": "1022",
+    "CVCStripe": "737"
+  },
+
+  "Stripe2": {
+    "cardNumberStripe0": "4",
+    "cardNumberStripe1": "000",
+    "cardNumberStripe2": "0012",
+    "cardNumberStripe3": "4000",
+    "cardNumberStripe4": "0000",
+    "expireDateStripe": "1234",
+    "CVCStripe": "737",
+    "ZIPStripe": "123456"
+  },
+  "Stripe3": {
+    "cardNumberStripe0": "4",
+    "cardNumberStripe1": "000",
+    "cardNumberStripe2": "0007",
+    "cardNumberStripe3": "6000",
+    "cardNumberStripe4": "0002",
+    "expireDateStripe": "1234",
+    "CVCStripe": "737",
+    "ZIPStripe": "123456"
+  },
+
+  "StripeFailedCard": {
+    "cardNumberStripe0": "4",
+    "cardNumberStripe1": "000",
+    "cardNumberStripe2": "0000",
+    "cardNumberStripe3": "0000",
+    "cardNumberStripe4": "0002",
+    "expireDateStripe": "1022",
+    "CVCStripe": "737",
+    "ZIPStripe": "777777"
+  },
+
+  "StripeSEPA": {
+    "name": "Stripe SEPA Luxembourg",
+    "sepaNumberStripe1": "LU28",
+    "sepaNumberStripe2": "0019",
+    "sepaNumberStripe3": "4006",
+    "sepaNumberStripe4": "4475",
+    "sepaNumberStripe5": "0000"
+  },
+
+  "StripeSEPA1": {
+    "name": "Stripe SEPA Netherlands",
+    "sepaNumberStripe1": "NL39",
+    "sepaNumberStripe2": "RABO",
+    "sepaNumberStripe3": "0300",
+    "sepaNumberStripe4": "0652",
+    "sepaNumberStripe5": "64"
+  },
+
+  "Sofort": {
+    "name": "NL39RABO0300065264",
+    "country": "NL"
+  }
+}
